@@ -1,6 +1,6 @@
 {
-  "name": "aseemble-helper-breaklines",
-  "version": "0.0.3",
+  "name": "assemble-helper-breaklines",
+  "version": "0.0.4",
   "description": "Transform the regular notation break line (n), into html <br /> tag",
   "keywords": [
     "grunt",
@@ -52,5 +52,5 @@
   "dist": {},
   "directories": {},
   "_resolved": "",
-  "readme": "ERROR: No README data found!"
+  "readme": "https://github.com/rquinterof/assemble-helper-breaklines/blob/master/readme.md"
 }
