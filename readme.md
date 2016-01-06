@@ -1,136 +1,41 @@
-> Load multiple grunt tasks using globbing patterns
+## assemble-helper-breaklines
 
-Transform the regular notation break line (n), into html <br /> tag
-
-Usually you would have to load each task one by one, which is unnecessarily cumbersome.
-
-This module will read the `dependencies`/`devDependencies`/`peerDependencies` in your package.json and load grunt tasks that match the provided patterns.
-
-
-#### Before
-
-```js
-grunt.loadNpmTasks('grunt-shell');
-grunt.loadNpmTasks('grunt-sass');
-grunt.loadNpmTasks('grunt-recess');
-grunt.loadNpmTasks('grunt-sizediff');
-grunt.loadNpmTasks('grunt-svgmin');
-grunt.loadNpmTasks('grunt-styl');
-grunt.loadNpmTasks('grunt-php');
-grunt.loadNpmTasks('grunt-eslint');
-grunt.loadNpmTasks('grunt-concurrent');
-grunt.loadNpmTasks('grunt-bower-requirejs');
-```
-
-#### After
-
-```js
-require('load-grunt-tasks')(grunt);
-```
+This helper allows you transform the regular breakline notation '\n', into html tag '<br />', if it's present on the data-json file.
 
 
 ## Install
 
+- Install the module and save to devDependcies
+``` 
+$ npm install assemble-helper-breaklines --save-dev
 ```
-$ npm install --save-dev load-grunt-tasks
+
+- Add a pattern or the entire name to use that module in the options
 ```
+options: { helpers: ['*-helper-breaklines'] } }
+```
+
+- Enjoy
 
 
 ## Usage
 
-```js
-// Gruntfile.js
-module.exports = function (grunt) {
-	// load all grunt tasks matching the ['grunt-*', '@*/grunt-*'] patterns
-	require('load-grunt-tasks')(grunt);
-
-	grunt.initConfig({});
-	grunt.registerTask('default', []);
-}
+```hbs
+<p>{{breaklines textdata}}</p>
 ```
 
+## Example
 
-## Examples
+### JSON file with a regular breakline notation (\n)
 
-### Load all grunt tasks
-
-```js
-require('load-grunt-tasks')(grunt);
+```json
+[{
+	"user-nickname": "R.Quintero",
+	"user-location": "",
+	"review-text": "this helper 'helps' me a lot \n and I can used it EVERYWHERE!",
+	"rating": 5
+}]
 ```
-
-Equivalent to:
-
-```js
-require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '@*/grunt-*']});
-```
-
-### Load all grunt-contrib tasks
-
-```js
-require('load-grunt-tasks')(grunt, {pattern: 'grunt-contrib-*'});
-```
-
-### Load all grunt-contrib tasks and another non-contrib task
-
-```js
-require('load-grunt-tasks')(grunt, {pattern: ['grunt-contrib-*', 'grunt-shell']});
-```
-
-### Load all grunt-contrib tasks excluding one
-
-You can exclude tasks using the negate `!` globbing pattern:
-
-```js
-require('load-grunt-tasks')(grunt, {pattern: ['grunt-contrib-*', '!grunt-contrib-coffee']});
-```
-
-### Set custom path to package.json
-
-```js
-require('load-grunt-tasks')(grunt, {config: '../package'});
-```
-
-### Only load from `devDependencies`
-
-```js
-require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-```
-
-### Only load from `devDependencies` and `dependencies`
-
-```js
-require('load-grunt-tasks')(grunt, {scope: ['devDependencies', 'dependencies']});
-```
-
-### All options in use
-
-```js
-require('load-grunt-tasks')(grunt, {
-	pattern: 'grunt-contrib-*',
-	config: '../package.json',
-	scope: 'devDependencies'
-});
-```
-
-
-## Options
-
-### pattern
-
-Type: `string`, `array`  
-Default: `['grunt-*', '@*/grunt-*']` ([globbing pattern](https://github.com/isaacs/minimatch))
-
-### config
-
-Type: `string`, `object`  
-Default: Path to nearest package.json
-
-### scope
-
-Type: `string`, `array`  
-Default: `['dependencies', 'devDependencies', 'peerDependencies']`  
-Values: `'dependencies'`, `'devDependencies'`, `'peerDependencies'`, `'bundledDependencies'`
-
 
 ## License
 
