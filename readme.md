@@ -1,6 +1,6 @@
-## assemble-helper-breaklines
+# assemble-helper-breaklines
 
-This helper allows you transform the regular breakline notation '\n', into html tag '<br />', if it's present on the data-json file.
+This helper allows you transform the regular breakline notation `\n`, into html tag `<br />`, if it's present on the data-json file.
 
 
 ## Install
