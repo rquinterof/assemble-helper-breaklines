@@ -1,6 +1,6 @@
 {
   "name": "aseemble-helper-breaklines",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transform the regular notation break line (n), into html <br /> tag",
   "keywords": [
     "grunt",
