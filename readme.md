@@ -62,9 +62,5 @@ Result
 
 
 ## Copyright and license
-Copyright 2013 Jon Schlinkert
-
-
-## Copyright and license
 
 Copyright 2016 & MIT © [Rolando Quintero](http://web2.us)
