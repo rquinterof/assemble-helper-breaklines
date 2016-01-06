@@ -43,6 +43,28 @@ Result
 	<p> this helper 'helped me' a lot <br /> and I can use it EVERYWHERE! </p>
 ```
 
-## License
 
-MIT © [Rolando Quintero](http://web2.us)
+## Related info
+
+* [grunt-init-assemble](https://github.com/assemble/grunt-init-assemble): Initialize new Assemble projects, with example mixins, helpers, templates and data.
+* [handlebars-helpers](https://github.com/assemble/handlebars-helpers)
+* [Assemble's documentation](http://assemble.io)
+* [assemble-less](https://github.com/assemble/assemble-less)
+* [assemble-examples](https://github.com/assemble/assemble-examples)
+
+
+## Author
+
+**[Rolando Quintero](http://github.com/rquinterof)**
+
++ [http://twitter.com/rquinterof](http://twitter.com/rquinterof)
++ [http://github.com/rquinterof](http://github.com/rquinterof)
+
+
+## Copyright and license
+Copyright 2013 Jon Schlinkert
+
+
+## Copyright and license
+
+Copyright 2016 & MIT © [Rolando Quintero](http://web2.us)

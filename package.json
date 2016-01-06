@@ -1,6 +1,6 @@
 {
   "name": "assemble-helper-breaklines",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Transform the regular notation break line (n), into html <br /> tag",
   "keywords": [
     "grunt",
