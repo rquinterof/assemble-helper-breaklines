@@ -1,0 +1,63 @@
+{
+  "name": "aseemble-helper-breaklines",
+  "version": "0.0.1",
+  "description": "Transform the regular notation break line (n), into html <br /> tag",
+  "keywords": [
+    "grunt",
+    "breakline",
+    "handlebars",
+    "tasks",
+    "helper",
+    "pattern",
+    "match",
+    "matchdep",
+    "dependencies",
+    "assemble"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Rolando Quintero",
+    "email": "rquinterof@outlook.com",
+    "url": "web2.us"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rquinterof/assemble-helper-breaklines"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  
+  "bugs": {
+    "url": "https://github.com/rquinterof/assemble-helper-breaklines/issues"
+  },
+  "homepage": "https://github.com/rquinterof/assemble-helper-breaklines",
+  "_npmUser": {
+    "name": "rquintero",
+    "email": "rquinterof@outlook.com"
+  },
+  "maintainers": [
+    {
+      "name": "rquintero",
+      "email": "rquinterof@outlook.com"
+    }
+  ],
+  "dist": {
+    
+  },
+  "directories": {},
+  "_resolved": "",
+  "readme": "ERROR: No README data found!"
+}
